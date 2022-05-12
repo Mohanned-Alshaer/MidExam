@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('mid_exams', function (Blueprint $table) {
             $table->id();
+            $table->string('Name');
+            $table->float('Price');
+            $table ->string("Category");
+            $table->integer('Quantity');
             $table->timestamps();
         });
     }
